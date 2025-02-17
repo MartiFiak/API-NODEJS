@@ -1,0 +1,27 @@
+{
+  "name": "api-nodejs",
+  "version": "1.0.0",
+  "description": "API-NODEJS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartiFiak/API-NODEJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MartiFiak/API-NODEJS/issues"
+  },
+  "homepage": "https://github.com/MartiFiak/API-NODEJS#readme",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.10.1",
+    "nodemon": "^3.1.9"
+  }
+}
