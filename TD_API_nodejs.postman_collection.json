@@ -69,7 +69,7 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:3000/api/profiles/:id",
+					"raw": "localhost:3000/api/profiles/{{profileId}}",
 					"host": [
 						"localhost"
 					],
@@ -77,13 +77,7 @@
 					"path": [
 						"api",
 						"profiles",
-						":id"
-					],
-					"variable": [
-						{
-							"key": "id",
-							"value": ""
-						}
+						"{{profileId}}"
 					]
 				}
 			},
@@ -104,7 +98,7 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:3000/api/profiles/:id/experience",
+					"raw": "localhost:3000/api/profiles/{{profileId}}/experience",
 					"host": [
 						"localhost"
 					],
@@ -112,14 +106,8 @@
 					"path": [
 						"api",
 						"profiles",
-						":id",
+						"{{profileId}}",
 						"experience"
-					],
-					"variable": [
-						{
-							"key": "id",
-							"value": ""
-						}
 					]
 				}
 			},
@@ -140,7 +128,7 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:3000/api/profiles/:id/skills",
+					"raw": "localhost:3000/api/profiles/{{profileId}}/skills",
 					"host": [
 						"localhost"
 					],
@@ -148,14 +136,8 @@
 					"path": [
 						"api",
 						"profiles",
-						":id",
+						"{{profileId}}",
 						"skills"
-					],
-					"variable": [
-						{
-							"key": "id",
-							"value": ""
-						}
 					]
 				}
 			},
@@ -176,7 +158,7 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:3000/api/profiles/:id/information",
+					"raw": "localhost:3000/api/profiles/{{profileId}}/information",
 					"host": [
 						"localhost"
 					],
@@ -184,18 +166,41 @@
 					"path": [
 						"api",
 						"profiles",
-						":id",
+						"{{profileId}}",
 						"information"
-					],
-					"variable": [
-						{
-							"key": "id",
-							"value": ""
-						}
 					]
 				}
 			},
 			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "profileId",
+			"value": "67b335db4f97cee4ee0d85a9",
+			"type": "string"
 		}
 	]
 }
